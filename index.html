@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Get-Fit</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+	/* CSS reset */
+	body {
+		margin: 0px;
+		padding: 0px;
+		background: url(image/photo2.jpg);
+		background-size: cover;
+		color: white;
+		font-family: 'Cabin', sans-serif;
+	}
+
+	.left {
+		display: inline-block;
+		/* border: 2px solid orange; */
+		position: absolute;
+		left: 35px;
+		top: -27px;
+
+	}
+
+	.left img {
+		width: 150px;
+
+	}
+
+	.left img:hover {
+		cursor: pointer;
+
+	}
+
+	.mid {
+		display: block;
+		width: 70%;
+		margin: 29px auto;
+		/* border: 2px solid green; */
+
+	}
+
+	.right {
+		position: absolute;
+		display: inline-block;
+		/*border: 2px solid pink;*/
+		right: 1px;
+		top: 43px;
+
+	}
+
+	.navbar {
+		display: inline-block;
+
+	}
+
+	.navbar li {
+		display: inline-block;
+		font-size: 25px;
+	}
+
+	.navbar li a {
+		color: white;
+		text-decoration: none;
+		padding: 16px 10px
+	}
+
+	.navbar li a:hover,
+	.navbar li a.active {
+		text-decoration: underline;
+		color: orange;
+	}
+
+	.btn {
+		margin: 0px 9px;
+		background-color: black;
+		color: white;
+		padding: 4px 14px;
+		border: 2px solid orangered;
+		border-radius: 10px;
+		font-size: 20px;
+		cursor: pointer;
+		font-family: 'Cabin', sans-serif;
+
+	}
+
+	.btn:hover {
+		background-color: rgba(255, 166, 0, 0.747);
+	}
+
+	.container {
+		border: 7px solid orangered;
+		margin: 120px 34px;
+		padding: 75px;
+		width: 29%;
+		border-radius: 27px;
+	}
+
+	.form-group input {
+		text-align: center;
+		display: block;
+		width: 370px;
+		padding: 10px;
+		border: 2px solid orangered;
+		margin: 7px auto;
+		border-radius: 26px;
+		font-size: 20px;
+	}
+
+	.form-group button {
+		width: 375px;
+		margin: 10px auto;
+	}
+
+	.h2 {
+		font-size: 35px;
+		letter-spacing: 20px;
+
+	}
+
+	.h4 {
+		font-size: 16px;
+		/* word-spacing: 10%; */
+		letter-spacing: 3px;
+	}
+</style>
+
+<body>
+	<header class="header">
+		<div class="left">
+			<img src="image/Tlogo2.png">
+		</div>
+
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">Offers</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Programs</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div class="right">
+			<button class="btn">Free Trial</button><button class="btn">Join Now</button>
+		</div>
+	</header>
+	
+	<div class="container">
+		<center>
+			<h2 class="h2">JOIN NOW</h2>
+		</center>
+		<center>
+			<h4 class="h4">Fit Yourself with Get-Fit</h4>
+		</center>
+		<form action="noaction.php">
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter Your Full Name">
+				<input type="text" name="" placeholder="Enter Your Email">
+				<input type="text" name="" placeholder="Enter Your Number">
+				<input type="text" name="" placeholder="Enter Your Gender">
+				<input type="text" name="" placeholder="Enter Your Age">
+				<input type="text" name="" placeholder="Enter Your Address">
+
+				<center><button class="btn">Submit</button></center>
+			</div>
+
+		</form>
+
+	</div>
+</body>
+
+</html>
